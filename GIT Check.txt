@@ -1,0 +1,70 @@
+
+Lenovo@DESKTOP-C9DV681 MINGW64 ~/Desktop/learn_git_again (master)
+$ git init
+Initialized empty Git repository in C:/Users/Lenovo/Desktop/learn_git_again/.git/
+
+Lenovo@DESKTOP-C9DV681 MINGW64 ~/Desktop/learn_git_again (master)
+$ git add .
+
+Lenovo@DESKTOP-C9DV681 MINGW64 ~/Desktop/learn_git_again (master)
+$ git commit -m "adding third.txt"
+[master (root-commit) b943a87] adding third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+
+Lenovo@DESKTOP-C9DV681 MINGW64 ~/Desktop/learn_git_again (master)
+$ git log
+commit b943a87d91af250cde22f0d7ecebbccb4ba8e36a (HEAD -> master)
+Author: intissar11 <intissartoualbia@gmail.com>
+Date:   Mon Apr 12 15:15:12 2021 +0100
+
+    adding third.txt
+
+Lenovo@DESKTOP-C9DV681 MINGW64 ~/Desktop/learn_git_again (master)
+$ git add .
+
+Lenovo@DESKTOP-C9DV681 MINGW64 ~/Desktop/learn_git_again (master)
+$ git commit -m "adding fourth.txt"
+[master 68bc128] adding fourth.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt
+
+Lenovo@DESKTOP-C9DV681 MINGW64 ~/Desktop/learn_git_again (master)
+$ git rm --cached third.txt
+rm 'third.txt'
+
+Lenovo@DESKTOP-C9DV681 MINGW64 ~/Desktop/learn_git_again (master)
+$ git add .
+
+Lenovo@DESKTOP-C9DV681 MINGW64 ~/Desktop/learn_git_again (master)
+$ git commit -m "removing third.txt"
+On branch master
+nothing to commit, working tree clean
+
+Lenovo@DESKTOP-C9DV681 MINGW64 ~/Desktop/learn_git_again (master)
+$ git log
+commit 68bc128aaca7aef438d2d24578fb1cd50fcdc1c3 (HEAD -> master)
+Author: intissar11 <intissartoualbia@gmail.com>
+Date:   Mon Apr 12 15:16:17 2021 +0100
+
+    adding fourth.txt
+
+commit b943a87d91af250cde22f0d7ecebbccb4ba8e36a
+Author: intissar11 <intissartoualbia@gmail.com>
+Date:   Mon Apr 12 15:15:12 2021 +0100
+
+    adding third.txt
+
+Lenovo@DESKTOP-C9DV681 MINGW64 ~/Desktop/learn_git_again (master)
+$ git config --global core.pager cat
+
+Lenovo@DESKTOP-C9DV681 MINGW64 ~/Desktop/learn_git_again (master)
+$ git remote add origin https://github.com/intissar11/data.git
+
+Lenovo@DESKTOP-C9DV681 MINGW64 ~/Desktop/learn_git_again (master)
+$ git branch -M main
+
+Lenovo@DESKTOP-C9DV681 MINGW64 ~/Desktop/learn_git_again (main)
+$ git push -u origin main
+
+
